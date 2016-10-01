@@ -15,12 +15,13 @@ require "capistrano/deploy"
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 
+require 'capistrano/bundler'
+require 'capistrano/rails'
+
+# If you are using rbenv add these lines:
 require 'capistrano/rbenv'
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, '2.3.1'
-
-require 'capistrano/bundler'
-require 'capistrano/rails'
 
 # require 'capistrano/passenger'
 
